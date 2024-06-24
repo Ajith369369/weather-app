@@ -4,6 +4,8 @@ const weatherBox = document.querySelector('.weather-box');
 const weatherDetails = document.querySelector('.weather-details');
 const error404 = document.querySelector('.not-found');
 const cityHide = document.querySelector('.city-hide');
+const dateDiv = document.querySelector('#formatted-date');
+const timeDiv = document.querySelector('.time');
 
 search.addEventListener('click', () => {
 
@@ -48,6 +50,8 @@ This part prevents re-fetching and updating the data if the city name hasn't cha
                 container.style.height = 'auto';
                 container.classList.add('active');
                 weatherBox.classList.add('active');
+                dateDiv.style.visibility = 'visible';
+                timeDiv.style.visibility = 'visible';
                 weatherDetails.classList.add('active');
                 error404.classList.remove('active');
 

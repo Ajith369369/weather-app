@@ -147,7 +147,7 @@ body {
 }
 
 .weather-box .description,
-.city, .time {
+.city, .date, .time {
   font-size: 22px;
   font-weight: 700;
   text-transform: capitalize;
@@ -155,6 +155,10 @@ body {
 
 .city, .time {
     margin: 20px 0px;
+  }
+
+ .date, .time {
+    visibility: hidden;
   }
 
 .weather-details {
