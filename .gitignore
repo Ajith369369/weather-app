@@ -1,9 +1,5 @@
-/public/images
-/public/scripts/app.js
-/public/scripts/app-3.js
-/public/styles/style.css
+# /public/images
 /obsolete
-index.html
 info.txt
 
 # git init
