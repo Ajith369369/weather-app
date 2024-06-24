@@ -78,7 +78,7 @@ This part prevents re-fetching and updating the data if the city name hasn't cha
                         break;
 
                     case 'Haze':
-                        image.src = './public/images/mist.png';
+                        image.src = './public/images/haze.png';
                         break;
 
                     default:
