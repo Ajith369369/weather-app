@@ -158,13 +158,14 @@ body {
   padding: 0 20px;
 }
 
-.weather-details .pressure img, .weather-details .humidity img {
-    width: 46px;
-    height: 46px;
-    color: white;
-    margin-right: 10px;
-  }
-  
+.weather-details .pressure img,
+.weather-details .humidity img {
+  width: 46px;
+  height: 46px;
+  color: white;
+  margin-right: 10px;
+}
+
 .weather-details .pressure,
 .weather-details .humidity,
 .weather-details .wind {
@@ -267,6 +268,8 @@ body {
   transform: translateY(0%);
 }
 
-.weather-details .pressure > div > div:nth-child(1) > span, .weather-details .humidity > div > div:nth-child(1) > span, .weather-details .wind > div > div:nth-child(1) > span  {
-    visibility: hidden;
+.weather-details .pressure > div > div:nth-child(1) > span,
+.weather-details .humidity > div > div:nth-child(1) > span,
+.weather-details .wind > div > div:nth-child(1) > span {
+  visibility: hidden;
 }
