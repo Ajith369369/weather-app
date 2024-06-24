@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="./public/styles/style-2.css" />
+  </head>
+  <body>
+
+    <div class="container-fluid">
+      
+      <div class="row">
+        <div class="col-sm-0 col-md-1 col-lg-1 col-xl-1"></div>
+        <div class="col-sm-12 col-md-10 col-lg-10 col-xl-10 d-flex flex-column justify-content-start align-items-center">
+          <div class="app-container">
+            <div class="search-box d-flex align-items-center">
+              <i class="bx bxs-map"></i>
+              <input id="city-name-in" type="text" value="Kottayam" placeholder="Enter a Location" />
+              <button class="bx bx-search"></button>
+            </div>
+      
+            <p class="city-hide">city-hide</p>
+            
+            <div class="weather-box">
+              <div class="box d-flex justify-content-center align-items-center">
+                <div class="info-weather d-flex justify-content-center align-items-center">
+                  <div class="weather d-flex flex-column align-items-center">
+                    <div class="city" id="city_name">Kottayam,IN</div>
+                    <img src="./public/images/cloud.png" />
+                    <p class="temperature">0<span>°C</span></p>
+                    <p class="description">Broken Clouds</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="weather-details d-flex flex-wrap justify-content-center align-items-center
+            ">
+              <div class="pressure d-flex justify-content-center align-items-center">
+                <i class="bx bx-water"></i>
+                <div class="text">
+                    <div class="info-pressure">
+                        <span>0%</span>
+                    </div>
+                    <p>Pressure</p>
+                </div>
+              </div>
+
+              <div class="humidity d-flex justify-content-center align-items-center">
+                  <i class="bx bx-water"></i>
+                  <div class="text">
+                      <div class="info-humidity">
+                          <span>0%</span>
+                      </div>
+                      <p>Humidity</p>
+                  </div>
+              </div>
+      
+              <div class="wind d-flex justify-content-center align-items-center">
+                  <i class='bx bx-wind'></i>
+                  <div class="text">
+                      <div class="info-wind">
+                          <span>0Km/h</span>
+                      </div>
+                      <p>Wind Speed</p>
+                  </div>
+              </div>
+            </div>
+      
+          <div class="not-found">
+              <div class="box">
+                  <img src="./public/images/404.png">
+                  <p>Oops! Location not found!</p>
+              </div>
+          </div>
+          
+          </div>
+        </div>
+        <div class="col-sm-0 col-md-1 col-lg-1 col-xl-1"></div>
+      </div>
+
+    </div>
+    <script src="./public/scripts/app-2.js"></script>
+  </body>
+</html>
