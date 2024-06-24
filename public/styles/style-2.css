@@ -158,10 +158,18 @@ body {
   padding: 0 20px;
 }
 
+.weather-details .humidity img {
+    width: 46px;
+    height: 46px;
+    color: white;
+    margin-right: 10px;
+  }
+  
 .weather-details .pressure,
 .weather-details .humidity,
 .weather-details .wind {
-  width: 50%;
+  width: 200px;
+  margin: 30px;
   transform: translateY(-100%);
 }
 
@@ -258,3 +266,4 @@ body {
 .active-clone#clone-info-wind span {
   transform: translateY(0%);
 }
+
