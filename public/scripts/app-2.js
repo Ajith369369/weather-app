@@ -188,6 +188,7 @@ This part prevents re-fetching and updating the data if the city name hasn't cha
         });
 });
 
+// Time
 function getTime(){
     const time = new Date()
     const hour = time.getHours()
@@ -202,7 +203,7 @@ function getTime(){
 }
 getTime()
 
-//date
+// Day
 function get_day(){
     const days = ["SUNDAY","MONDAY","TUESDAY","WEDNESDAY","THURSDAY","FRIDAY","SATURDAY"]
     const d = new Date()
@@ -210,3 +211,21 @@ function get_day(){
     today.innerHTML = `${day}`
 }
 get_day()
+
+// Date 
+
+function get_date(){
+    // Get the current date
+    const now = new Date();
+
+    // Custom format: DD-MM-YYYY
+    const year = now.getFullYear();
+    const month = String(now.getMonth() + 1).padStart(2, '0'); // Months are zero-based
+    const day = String(now.getDate()).padStart(2, '0');
+
+    const formattedDate = `${day}/${month}/${year}`;
+
+    // Display the formatted date
+    document.getElementById('formatted-date').innerText = formattedDate;
+}
+get_date()
