@@ -20,7 +20,7 @@ search.addEventListener('click', () => {
  console.log('Fetched JSON:', json);
             if (json.cod == '404') {
                 cityHide.textContent = city;
-                container.style.height = 'fit-content';
+                container.style.height = 'auto';
                 weatherBox.classList.remove('active');
                 weatherDetails.classList.remove('active');
                 error404.classList.add('active');
