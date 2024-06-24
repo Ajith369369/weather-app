@@ -267,3 +267,6 @@ body {
   transform: translateY(0%);
 }
 
+.weather-details .pressure > div > div:nth-child(1) > span, .weather-details .humidity > div > div:nth-child(1) > span, .weather-details .wind > div > div:nth-child(1) > span  {
+    visibility: hidden;
+}
