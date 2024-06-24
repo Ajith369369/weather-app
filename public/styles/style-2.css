@@ -147,13 +147,13 @@ body {
 }
 
 .weather-box .description,
-.city {
+.city, .time {
   font-size: 22px;
-  font-weight: 500;
+  font-weight: 700;
   text-transform: capitalize;
 }
 
-.city {
+.city, .time {
     margin: 20px 0px;
   }
 
