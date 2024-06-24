@@ -187,3 +187,26 @@ This part prevents re-fetching and updating the data if the city name hasn't cha
 
         });
 });
+
+function getTime(){
+    const time = new Date()
+    const hour = time.getHours()
+    const min = time.getMinutes()
+    const second = time.getSeconds()
+    
+    clock.innerHTML = `${hour} : ${min} : ${second} ${hour>12?'PM':'AM'}`
+
+    setTimeout(()=>{
+        getTime()
+    },1000)
+}
+getTime()
+
+//date
+function get_day(){
+    const days = ["SUNDAY","MONDAY","TUESDAY","WEDNESDAY","THURSDAY","FRIDAY","SATURDAY"]
+    const d = new Date()
+    let day = days[d.getDay()]
+    today.innerHTML = `${day}`
+}
+get_day()
