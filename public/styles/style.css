@@ -92,12 +92,16 @@ body {
   margin: 40px 0;
 }
 
-.weather-box,
-.weather-details,
-.not-found {
+.weather-box, .not-found {
   overflow: hidden;
   visibility: hidden;
-  transform: translateY(-50%);
+  transform: translateY(-70%);
+}
+
+.weather-details {
+  overflow: hidden;
+  visibility: hidden;
+  transform: translateY(-200%);
 }
 
 .weather-box.active,
