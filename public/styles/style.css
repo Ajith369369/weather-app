@@ -12,13 +12,15 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  /* background-image: url("../images/background.jpg"); */
+  background-image: url("../images/background.jpg");
   /* background-image: url("../images/clear.webp"); */
   /* background-image: url("../images/rain.gif"); */
   /* background-image: url("../images/snow.gif"); */
   /* background-image: url("../images/cloud.gif"); */
   /* background-image: url("../images/mist.gif"); */
-  background-image: url("../images/haze.gif");
+  /* background-image: url("../images/haze.gif"); */
+  /* background-image: url("../images/drizzle.webp"); */
+  /* background-image: url("../images/thunderstorm.gif"); */
   background-size: cover;
   background-position: center;
   overflow-x: hidden;
@@ -107,7 +109,7 @@ body {
 .weather-details {
   overflow: hidden;
   visibility: hidden;
-  transform: translateY(-150%);
+  transform: translateY(-250%);
 }
 
 .date, .time {

@@ -113,6 +113,18 @@ This part prevents re-fetching and updating the data if the city name hasn't cha
               'url("./public/images/haze.gif")';
             break;
 
+            case "Drizzle":
+            image.src = "./public/images/rain.png";
+            document.body.style.backgroundImage =
+              'url("./public/images/drizzle.webp")';
+            break;
+
+            case "Thunderstorm":
+            image.src = "./public/images/thunderstorm.png";
+            document.body.style.backgroundImage =
+              'url("./public/images/lightning.gif")';
+            break;
+
           default:
             image.src = "./public/images/cloud.png";
             document.body.style.backgroundImage =
