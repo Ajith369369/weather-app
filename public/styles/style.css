@@ -97,12 +97,14 @@ body {
 .not-found {
   overflow: hidden;
   visibility: hidden;
+  transform: translateY(-50%);
 }
 
 .weather-box.active,
 .weather-details.active,
 .not-found.active {
   visibility: visible;
+  transform: translateY(0%);
 }
 
 .weather-box .box,
