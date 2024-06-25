@@ -181,6 +181,8 @@ body {
 .suggest {
   font-size: 22px;
   font-weight: 700;
+  text-align: justify;
+  padding: 0px 20px;
 }
 
 .city, .time {
