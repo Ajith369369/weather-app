@@ -108,7 +108,14 @@ body {
   transform: translateY(-1000%);
 }
 
-.weather-box.active, .date.active, .time.active,
+.date.active, .time.active {
+  visibility: visible;
+  transform: translateY(0%);
+  transition: transform 1s ease;
+  transition-delay: 0.4s;
+}
+
+.weather-box.active,
 .weather-details.active,
 .not-found.active {
   visibility: visible;
