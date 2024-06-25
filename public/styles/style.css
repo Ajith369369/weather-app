@@ -101,18 +101,18 @@ body {
 .weather-details {
   overflow: hidden;
   visibility: hidden;
-  transform: translateY(-200%);
+  transform: translateY(-150%);
 }
 
 .date, .time {
-  transform: translateY(-1000%);
+  transform: translateY(-1600%);
 }
 
 .date.active, .time.active {
   visibility: visible;
   transform: translateY(0%);
   transition: transform 1s ease;
-  transition-delay: 0.4s;
+  transition-delay: 1s;
 }
 
 .weather-box.active,
@@ -132,7 +132,7 @@ body {
 .not-found.active .box {
   transform: translateY(0%);
   transition: transform 1s ease;
-  transition-delay: 0.6s;
+  transition-delay: 1s;
 }
 
 .weather-box .box .info-weather {
