@@ -80,7 +80,7 @@ This part prevents re-fetching and updating the data if the city name hasn't cha
           case "Clear":
             image.src = "./public/images/clear.png";
             document.body.style.backgroundImage =
-              'url("./public/images/clear.webp")';
+              'url("./public/images/clear.gif")';
             break;
 
           case "Rain":
@@ -127,17 +127,17 @@ This part prevents re-fetching and updating the data if the city name hasn't cha
 
         const weatherConditions = {
           Clear:
-            "Clear skies today! It's a great day for outdoor activities. Don't forget your sunscreen and sunglasses!",
-          Rain: "Expect rain today. Keep your umbrella handy and drive safely. Great day for indoor activities!",
-          Snow: "Snowy day ahead! Dress warmly and drive carefully. Perfect weather for some snow fun!",
+            "Clear skies today! It's a great day for outdoor activities. Clear skies at night are great for stargazing; find a dark spot away from city lights. If it's hot, make sure to drink plenty of water. Don't forget your sunscreen and sunglasses!",
+          Rain: "Expect rain today. Keep your umbrella handy and drive safely. Stay updated on local weather alerts for possible flooding. Great day for indoor activities!",
+          Snow: "Snowy day ahead! Dress warmly and drive carefully. Roads might be icy; ensure your vehicle is equipped for snow. Make sure your home heating system is working well. Perfect weather for some snow fun!",
           Clouds:
-            "Cloudy skies today. Enjoy a walk or some light activities. Keep an eye on the weather updates!",
-          Mist: "Misty conditions today. Drive carefully and wear a water-resistant jacket. Perfect for some mystical photography!",
-          Haze: "Hazy conditions today. Limit outdoor activities and check the air quality. Stay hydrated and safe!",
+            "Cloudy skies today. Enjoy a walk or some light activities. Cloudy skies can create dramatic and beautiful photo opportunities. Clouds can turn to rain; keep an eye on the weather updates!",
+          Mist: "Misty conditions today. Drive carefully and wear a water-resistant jacket. Sidewalks and paths might be slippery. Perfect for some mystical photography!",
+          Haze: "Hazy conditions today. Limit outdoor activities and check the air quality. Keep indoor air clean with air purifiers. Stay updated on local air quality reports. Stay hydrated and safe!",
           Thunderstorm:
-            "Thunderstorms expected today. Stay indoors and unplug electronics. Stay safe!",
+            "Thunderstorms expected today. Stay indoors and unplug electronics. If caught outside, avoid tall objects like trees or poles. Keep an emergency kit ready in case of power outages. Stay safe!",
           Drizzle:
-            "Light drizzle today. A small umbrella should do. Enjoy the fresh feel of light rain!",
+            "Light drizzle today. A small umbrella should do. Roads can be slick; drive slower than usual. Light drizzle is usually fine for most outdoor activities. Drizzle can make the air feel damp; keep your skin moisturized. Enjoy the fresh feel of light rain!",
         };
 
         // Weather condition
