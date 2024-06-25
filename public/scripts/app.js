@@ -48,7 +48,6 @@ This part prevents re-fetching and updating the data if the city name hasn't cha
                 return;
             } else {
                 cityHide.textContent = city;
-
                 container.style.height = 'auto';
                 container.classList.add('active');
                 weatherBox.classList.add('active');
@@ -187,10 +186,6 @@ This part prevents re-fetching and updating the data if the city name hasn't cha
                         console.log('Old clones removed after 2200ms.');
                     }, 2200);
                 }
-
-
-
-
             }
 
         });
@@ -216,7 +211,7 @@ function get_day(){
     const days = ["SUNDAY","MONDAY","TUESDAY","WEDNESDAY","THURSDAY","FRIDAY","SATURDAY"]
     const d = new Date()
     let day = days[d.getDay()]
-    today.innerHTML = `${day}`
+    today.innerHTML = `${day}, `
 }
 get_day()
 
