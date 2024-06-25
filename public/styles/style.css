@@ -104,7 +104,11 @@ body {
   transform: translateY(-200%);
 }
 
-.weather-box.active,
+.date, .time {
+  transform: translateY(-1000%);
+}
+
+.weather-box.active, .date.active, .time.active,
 .weather-details.active,
 .not-found.active {
   visibility: visible;
