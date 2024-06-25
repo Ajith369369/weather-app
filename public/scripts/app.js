@@ -26,6 +26,8 @@ search.addEventListener('click', () => {
                 weatherBox.classList.remove('active');
                 weatherDetails.classList.remove('active');
                 error404.classList.add('active');
+                dateDiv.style.visibility = 'hidden';
+                timeDiv.style.visibility = 'hidden';
                 return;
             }
 
