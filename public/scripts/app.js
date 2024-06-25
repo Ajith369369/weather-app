@@ -124,6 +124,29 @@ This part prevents re-fetching and updating the data if the city name hasn't cha
         city_name.innerHTML = `${json.name}, ${json.sys.country}`;
         temperature.innerHTML = `${parseInt(json.main.temp)}<span>°C</span>`;
         description.innerHTML = `${json.weather[0].description}`;
+
+        const weatherConditions = {
+          Clear:
+            "Clear skies today! It's a great day for outdoor activities. Don't forget your sunscreen and sunglasses!",
+          Rain: "Expect rain today. Keep your umbrella handy and drive safely. Great day for indoor activities!",
+          Snow: "Snowy day ahead! Dress warmly and drive carefully. Perfect weather for some snow fun!",
+          Clouds:
+            "Cloudy skies today. Enjoy a walk or some light activities. Keep an eye on the weather updates!",
+          Mist: "Misty conditions today. Drive carefully and wear a water-resistant jacket. Perfect for some mystical photography!",
+          Haze: "Hazy conditions today. Limit outdoor activities and check the air quality. Stay hydrated and safe!",
+          Thunderstorm:
+            "Thunderstorms expected today. Stay indoors and unplug electronics. Stay safe!",
+          Drizzle:
+            "Light drizzle today. A small umbrella should do. Enjoy the fresh feel of light rain!",
+        };
+
+        // Weather condition
+        const currentWeather = json.weather[0].main;
+
+        // Display the suggestion
+        const suggestionBox = document.getElementById("suggestion");
+        suggestionBox.textContent = weatherConditions[currentWeather];
+
         pressure.innerHTML = `${json.main.pressure} hPa`;
         humidity.innerHTML = `${json.main.humidity}%`;
         console.log("Updating wind.innerHTML...");
@@ -258,15 +281,19 @@ function get_day() {
 get_day();
 
 function getDaySuffix(day) {
-    if (day >= 11 && day <= 13) {
-        return "th";
-    }
-    switch (day % 10) {
-        case 1: return "st";
-        case 2: return "nd";
-        case 3: return "rd";
-        default: return "th";
-    }
+  if (day >= 11 && day <= 13) {
+    return "th";
+  }
+  switch (day % 10) {
+    case 1:
+      return "st";
+    case 2:
+      return "nd";
+    case 3:
+      return "rd";
+    default:
+      return "th";
+  }
 }
 
 // Date

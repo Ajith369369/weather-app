@@ -178,6 +178,11 @@ body {
   text-transform: capitalize;
 }
 
+.suggest {
+  font-size: 22px;
+  font-weight: 700;
+}
+
 .city, .time {
     margin: 20px 0px;
   }
