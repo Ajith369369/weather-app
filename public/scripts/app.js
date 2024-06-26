@@ -30,8 +30,8 @@ search.addEventListener("click", () => {
         // container.style.overflowY = "auto";
         // document.querySelector(".not-found.active .box").style.overflowY = "auto";
         weatherBox.classList.remove("active");
-        weatherBox.style.display = "none";
-        // weatherBox.style.transform = 'translateY(-100%)';
+        // weatherBox.style.display = "none";
+        // weatherBox.style.transform = 'translateY(-300%)';
         dateDiv.classList.remove("active");
         timeDiv.classList.remove("active");
         weatherDetails.classList.remove("active");
@@ -68,7 +68,7 @@ This part prevents re-fetching and updating the data if the city name hasn't cha
         cityHide.textContent = city;
         container.style.height = "auto";
         container.classList.add("active");
-        weatherBox.style.display = "block";
+        // weatherBox.style.display = "block";
         weatherBox.classList.add("active");
         dateDiv.classList.add("active");
         timeDiv.classList.add("active");

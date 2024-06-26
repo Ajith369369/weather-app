@@ -102,7 +102,7 @@ body {
 .weather-box, .not-found {
   overflow: hidden;
   visibility: hidden;
-  transform: translateY(-70%);
+  transform: translateY(-100%);
 }
 
 .weather-details {
