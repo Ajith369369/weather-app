@@ -130,6 +130,11 @@ body {
   transition: transform 2s ease-in-out;
 }
 
+.not-found.active, .not-found.active .box{
+  margin-bottom: 20px;
+  padding: 0px 20px;
+}
+
 .weather-box .box,
 .not-found .box {
   transform: translateY(-100%);
@@ -261,7 +266,7 @@ body {
 }
 
 .not-found img {
-  width: 65%;
+  height: 250px;
 }
 
 .not-found p {

@@ -26,7 +26,11 @@ search.addEventListener("click", () => {
           'url("./public/images/background.jpg")';
         cityHide.textContent = city;
         container.style.height = "auto";
+        // container.style.marginBottom = "0px"
+        // container.style.overflowY = "auto";
+        // document.querySelector(".not-found.active .box").style.overflowY = "auto";
         weatherBox.classList.remove("active");
+        weatherBox.style.display = "none";
         weatherDetails.classList.remove("active");
         error404.classList.add("active");
         dateDiv.style.visibility = "hidden";
@@ -62,6 +66,9 @@ This part prevents re-fetching and updating the data if the city name hasn't cha
         container.style.height = "auto";
         container.classList.add("active");
         weatherBox.classList.add("active");
+        weatherBox.style.display = "";
+        dateDiv.style.visibility = "visible";
+        timeDiv.style.visibility = "visible";
         dateDiv.classList.add("active");
         timeDiv.classList.add("active");
         // dateDiv.style.visibility = 'visible';
