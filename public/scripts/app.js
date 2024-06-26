@@ -9,6 +9,7 @@ const timeDiv = document.querySelector(".time");
 
 search.addEventListener("click", () => {
   const APIKey = "716882002bd5b01432d57d43c2a7e72c";
+  // const APIKey = "84f71e31247156030a3a95699cd9eb27";
   const city = document.querySelector(".search-box input").value;
 
   if (city == "") {
