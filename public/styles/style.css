@@ -222,7 +222,7 @@ body {
 .weather-details .humidity,
 .weather-details .wind {
   width: 200px;
-  margin: 30px;
+  margin: 30px 10px;
   transform: translateY(-100%);
 }
 
