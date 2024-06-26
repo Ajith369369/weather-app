@@ -8,8 +8,7 @@ const dateDiv = document.querySelector("#formatted-date");
 const timeDiv = document.querySelector(".time");
 
 search.addEventListener("click", () => {
-  const APIKey = "716882002bd5b01432d57d43c2a7e72c";
-  // const APIKey = "84f71e31247156030a3a95699cd9eb27";
+  const APIKey = "8b2a58f2a20aac789aece40208e8bab7";
   const city = document.querySelector(".search-box input").value;
 
   if (city == "") {
@@ -44,7 +43,7 @@ search.addEventListener("click", () => {
 
       // const image = document.querySelector('.weather-box img');
       const image = document.querySelector(".weather-box .info-weather img");
-      console.log("Weather image element:", image);
+      // console.log("Weather image element:", image);
       const city_name = document.querySelector("#city_name");
       const temperature = document.querySelector(
         ".weather-box .info-weather .temperature"
@@ -78,9 +77,9 @@ This part prevents re-fetching and updating the data if the city name hasn't cha
 
         setTimeout(() => {
           container.classList.remove("active");
-          console.log(
+          /* console.log(
             "Removed active class from container after timeout 2500 ms."
-          );
+          ); */
         }, 2500);
 
         switch (json.weather[0].main) {
@@ -139,7 +138,7 @@ This part prevents re-fetching and updating the data if the city name hasn't cha
         }
 
         // Set Weather Information
-        console.log("Updating UI elements with fetched data...");
+        // console.log("Updating UI elements with fetched data...");
         city_name.innerHTML = `${json.name}, ${json.sys.country}`;
         temperature.innerHTML = `${parseInt(json.main.temp)}<span>°C</span>`;
         description.innerHTML = `${json.weather[0].description}`;
@@ -168,7 +167,7 @@ This part prevents re-fetching and updating the data if the city name hasn't cha
 
         pressure.innerHTML = `${json.main.pressure} hPa`;
         humidity.innerHTML = `${json.main.humidity} %`;
-        console.log("Updating wind.innerHTML...");
+        // console.log("Updating wind.innerHTML...");
         wind.innerHTML = `${parseInt(json.wind.speed)} m/s`;
 
         // Clone Weather Information Elements
@@ -177,7 +176,7 @@ This part prevents re-fetching and updating the data if the city name hasn't cha
         const infoHumidity = document.querySelector(".info-humidity");
         const infoWind = document.querySelector(".info-wind");
 
-        console.log("Cloning info elements...");
+        // console.log("Cloning info elements...");
         const elCloneInfoWeather = infoWeather.cloneNode(true);
         const elCloneInfoPressure = infoPressure.cloneNode(true);
         const elCloneInfoHumidity = infoHumidity.cloneNode(true);
@@ -195,20 +194,20 @@ This part prevents re-fetching and updating the data if the city name hasn't cha
 
         elCloneInfoWind.id = "clone-info-wind";
         elCloneInfoWind.classList.add("active-clone");
-        console.log("elCloneInfoWind.classList", elCloneInfoWind.classList);
-        console.log("Info wind clone:", elCloneInfoWind);
+        // console.log("elCloneInfoWind.classList", elCloneInfoWind.classList);
+        // console.log("Info wind clone:", elCloneInfoWind);
 
         // Insert clones into the DOM
-        console.log("Appending clones after timeout...");
+        // console.log("Appending clones after timeout...");
         setTimeout(() => {
           infoWeather.style.display = "none";
           infoWeather.insertAdjacentElement("afterend", elCloneInfoWeather);
-          console.log("Inserted clone:", elCloneInfoWeather);
+          // console.log("Inserted clone:", elCloneInfoWeather);
 
           infoPressure.insertAdjacentElement("afterend", elCloneInfoPressure);
           infoHumidity.insertAdjacentElement("afterend", elCloneInfoHumidity);
           infoWind.insertAdjacentElement("afterend", elCloneInfoWind);
-          console.log("Clones appended after 2200 ms.");
+          // console.log("Clones appended after 2200 ms.");
         }, 2200);
 
         /* setTimeout(() => {
@@ -220,17 +219,17 @@ This part prevents re-fetching and updating the data if the city name hasn't cha
         const cloneInfoWeather = document.querySelectorAll(
           ".info-weather.active-clone"
         );
-        console.log("cloneInfoWeather:", cloneInfoWeather);
+        // console.log("cloneInfoWeather:", cloneInfoWeather);
         const totalCloneInfoWeather = cloneInfoWeather.length;
         const cloneInfoWeatherFirst = cloneInfoWeather[0];
-        console.log("Total cloned weather elements:", totalCloneInfoWeather);
+        // console.log("Total cloned weather elements:", totalCloneInfoWeather);
 
         const cloneInfoPressure = document.querySelectorAll(
           ".info-pressure.active-clone"
         );
-        console.log("cloneInfoPressure:", cloneInfoPressure);
+        // console.log("cloneInfoPressure:", cloneInfoPressure);
         const cloneInfoPressureFirst = cloneInfoPressure[0];
-        console.log("cloneInfoPressureFirst:", cloneInfoPressureFirst);
+        // console.log("cloneInfoPressureFirst:", cloneInfoPressureFirst);
 
         const cloneInfoHumidity = document.querySelectorAll(
           ".info-humidity.active-clone"
@@ -240,27 +239,27 @@ This part prevents re-fetching and updating the data if the city name hasn't cha
         const cloneInfoWind = document.querySelectorAll(
           ".info-wind.active-clone"
         );
-        console.log("cloneInfoWind:", cloneInfoWind);
+        // console.log("cloneInfoWind:", cloneInfoWind);
         const cloneInfoWindFirst = cloneInfoWind[0];
-        console.log("cloneInfoWindFirst:", cloneInfoWindFirst);
+        // console.log("cloneInfoWindFirst:", cloneInfoWindFirst);
 
         if (totalCloneInfoWeather > 0) {
-          console.log("Removing first set of active clones...");
+          // console.log("Removing first set of active clones...");
           cloneInfoWeatherFirst.classList.remove("active-clone");
           cloneInfoPressureFirst.classList.remove("active-clone");
           cloneInfoHumidityFirst.classList.remove("active-clone");
           cloneInfoWindFirst.classList.remove("active-clone");
-          console.log("InfoWind's active-clone class removed.");
+          // console.log("InfoWind's active-clone class removed.");
 
           // Remove old clones
-          console.log("Remove old clones...");
+          // console.log("Remove old clones...");
           setTimeout(() => {
             cloneInfoWeatherFirst.remove();
             cloneInfoPressureFirst.remove();
             cloneInfoHumidityFirst.remove();
             cloneInfoWindFirst.remove();
-            console.log("InfoWind's clone removed.");
-            console.log("Old clones removed after 2200ms.");
+            // console.log("InfoWind's clone removed.");
+            // console.log("Old clones removed after 2200ms.");
           }, 2200);
         }
       }
