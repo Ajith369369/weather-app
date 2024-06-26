@@ -122,7 +122,7 @@ This part prevents re-fetching and updating the data if the city name hasn't cha
             case "Thunderstorm":
             image.src = "./public/images/thunderstorm.png";
             document.body.style.backgroundImage =
-              'url("./public/images/lightning.gif")';
+              'url("./public/images/thunderstorm.gif")';
             break;
 
           default:
