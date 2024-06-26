@@ -112,13 +112,14 @@ body {
 }
 
 .date, .time {
+  visibility: hidden;
   transform: translateY(-1600%);
 }
 
 .date.active, .time.active {
   visibility: visible;
   transform: translateY(0%);
-  transition: transform 1s ease;
+  transition: transform 2s ease;
   transition-delay: 1s;
 }
 

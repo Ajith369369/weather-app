@@ -25,17 +25,19 @@ search.addEventListener("click", () => {
         document.body.style.backgroundImage =
           'url("./public/images/background.jpg")';
         cityHide.textContent = city;
-        container.style.height = "400px";
+        container.style.height = "500px";
         // container.style.marginBottom = "0px"
         // container.style.overflowY = "auto";
         // document.querySelector(".not-found.active .box").style.overflowY = "auto";
         weatherBox.classList.remove("active");
         weatherBox.style.display = "none";
         // weatherBox.style.transform = 'translateY(-100%)';
+        dateDiv.classList.remove("active");
+        timeDiv.classList.remove("active");
         weatherDetails.classList.remove("active");
         error404.classList.add("active");
-        dateDiv.style.visibility = "hidden";
-        timeDiv.style.visibility = "hidden";
+        // dateDiv.style.visibility = "hidden";
+        // timeDiv.style.visibility = "hidden";
         return;
       }
 
@@ -68,8 +70,6 @@ This part prevents re-fetching and updating the data if the city name hasn't cha
         container.classList.add("active");
         weatherBox.style.display = "block";
         weatherBox.classList.add("active");
-        dateDiv.style.visibility = "visible";
-        timeDiv.style.visibility = "visible";
         dateDiv.classList.add("active");
         timeDiv.classList.add("active");
         weatherDetails.classList.add("active");
