@@ -167,7 +167,7 @@ This part prevents re-fetching and updating the data if the city name hasn't cha
         suggestionBox.textContent = weatherConditions[currentWeather];
 
         pressure.innerHTML = `${json.main.pressure} hPa`;
-        humidity.innerHTML = `${json.main.humidity}%`;
+        humidity.innerHTML = `${json.main.humidity} %`;
         console.log("Updating wind.innerHTML...");
         wind.innerHTML = `${parseInt(json.wind.speed)} m/s`;
 
